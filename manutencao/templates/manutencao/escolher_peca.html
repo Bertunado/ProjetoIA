@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escolha a Peça</title>
+    <link rel="stylesheet" href="{% static 'manutencao/style.css' %}">
+</head>
+<body>
+    <h1>Escolha uma peça</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+        <select name="peca" required>
+            <option value="" disabled selected>Selecione a peça</option>
+            {% for peca in pecas_opcoes %}
+                <option value="{{ peca }}">{{ peca|capfirst }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Ver peças</button>
+    </form>
+
+</body>
+</html>

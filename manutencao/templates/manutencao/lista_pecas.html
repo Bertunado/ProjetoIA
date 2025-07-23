@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Peças</title>
+    <link rel="stylesheet" href="{% static 'manutencao/style.css' %}">
+</head>
+<body>
+
+   {% if tipo_peca %}
+    <h2>Lista de Peças: {{ tipo_peca|capfirst }}</h2>
+{% else %}
+    <h2>Lista de todas as Peças</h2>
+{% endif %}
+
+    <a href="{% url 'adiciona_peca' %}">Adicionar Peça</a>
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Data de Inserção</th>
+            <th>Dias em Uso</th>
+            <th>Vida Útil Restante</th>
+            <th>Status</th>
+        </tr>
+        {% for peca in pecas %}
+      <tr>
+            <td>{{ peca.nome }}</td>
+            <td>{{ peca.data_insercao }}</td>
+            <td>{{ peca.dias_em_uso }}</td>
+            <td>{{ peca.vida_util_restante }} dias</td>
+            <td>{{ peca.alerta_substituicao }}</td>
+            </tr>
+        {% empty %}
+        <tr>
+            <td colspan="5">Nenhuma peça cadastrada.</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
