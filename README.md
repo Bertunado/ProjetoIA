@@ -1,4 +1,5 @@
 Sistema de Previsão de Vida Útil de Peças
+
 Este projeto tem como objetivo prever a vida útil de peças mecânicas, como parafusos, correias e ventosas, com base em dados de uso fornecidos pelos usuários. A aplicação utiliza técnicas de aprendizado de máquina para estimar quantos dias cada peça deve durar, considerando o tempo diário de uso e descanso. Os dados são armazenados em arquivos CSV e alimentam modelos preditivos treinados com algoritmos de regressão (Random Forest).
 Funcionalidades
 Registro de novas peças com informações sobre tempo de uso e descanso diário.
@@ -60,7 +61,8 @@ Machine Learning com RandomForestRegressor
 Persistência de dados em arquivos CSV
 
 
-Estrutura de Arquivos
+Estrutura de Arquivos:
+
 dados_parafuso.csv, dados_correia.csv, dados_ventosa.csv: Arquivos que armazenam os dados de uso registrados para cada tipo de peça.
 
 
