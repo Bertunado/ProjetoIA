@@ -14,19 +14,19 @@ Este projeto tem como objetivo prever a vida útil de peças mecânicas, como pa
 
 *  **Interface de chat que exibe:**
 
-  * Intensidade de uso
+   * Intensidade de uso
 
-  * Status da peça
+   * Status da peça
 
-  * Data da troca
+   * Data da troca
 
-  * Vida útil restante estimada
+   * Vida útil restante estimada
 
-  * Janela recomendada para substituição da peça
+   * Janela recomendada para substituição da peça
 
-  * Registro de peças que apresentaram falha, com data da troca e data da quebra, permitindo aprimorar o modelo com dados reais.
+   * Registro de peças que apresentaram falha, com data da troca e data da quebra, permitindo aprimorar o modelo com dados reais.
 
-  * Atualização automática dos arquivos CSV e reprocessamento dos modelos por meio da interface (em desenvolvimento).
+   * Atualização automática dos arquivos CSV e reprocessamento dos modelos por meio da interface (em desenvolvimento).
 
 
 *  **Tecnologias Utilizadas**
