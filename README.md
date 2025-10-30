@@ -5,11 +5,11 @@ Este projeto tem como objetivo prever a vida útil de peças mecânicas, como pa
 
 *  **Funcionalidades**
 
-  * Registro de novas peças com informações sobre tempo de uso e descanso diário.
+   * Registro de novas peças com informações sobre tempo de uso e descanso diário.
 
-  * Cálculo automático da intensidade de uso (leve, moderado ou intenso).
+   * Cálculo automático da intensidade de uso (leve, moderado ou intenso).
 
-  * Previsão da vida útil da peça (em dias), com base nos dados fornecidos.
+   * Previsão da vida útil da peça (em dias), com base nos dados fornecidos.
 
 
 *  **Interface de chat que exibe:**
@@ -31,12 +31,12 @@ Este projeto tem como objetivo prever a vida útil de peças mecânicas, como pa
 
 *  **Tecnologias Utilizadas**
   
-  * Python
+   * Python
 
-  * Pandas e Scikit-learn
+   * Pandas e Scikit-learn
 
-  * HTML, CSS e JavaScript (frontend)
+   * HTML, CSS e JavaScript (frontend)
 
-  * Machine Learning com RandomForestRegressor
+   * Machine Learning com RandomForestRegressor
 
-  * Persistência de dados em arquivos CSV
+   * Persistência de dados em arquivos CSV
